@@ -1,7 +1,5 @@
 #!/bin/bash
 
-cd $APPVEYOR_BUILD_FOLDER/skaffold/examples/getting-started
-
 cat <<'__eot__' >main.go
 package main
 
@@ -17,5 +15,3 @@ func main() {
         }
 }
 __eot__
-
-skaffold dev
