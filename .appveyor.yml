@@ -10,5 +10,24 @@ install:
 test_script:
 - sh: |
     cd $APPVEYOR_BUILD_FOLDER/skaffold/examples/getting-started/
-    sudo bash $APPVEYOR_BUILD_FOLDER/setup.sh
+    sudo cat <<'__eot__' >main.go
+    package main
+
+    import (
+            "fmt"
+            "time"
+    )
+
+    func main() {
+    	for i := 0; i < 10; i++ {
+                    fmt.Println("Hello world!")
+                    time.Sleep(time.Second * 1)
+            }
+    }
+    __eot__
+
+    git config --global user.email "you@example.com"
+    git config --global user.name "Your Name"
+    git commit -am 'stuff and things'
+    pwd
     sudo skaffold dev
