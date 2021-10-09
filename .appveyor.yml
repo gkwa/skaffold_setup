@@ -10,7 +10,7 @@ install:
 test_script:
 - sh: |
     cd $APPVEYOR_BUILD_FOLDER/skaffold/examples/getting-started/
-    skaffold dev &
+    sudo skaffold dev &
     sleep 60
 
     cat <<'__eot__' >main.go
