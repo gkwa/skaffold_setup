@@ -11,7 +11,7 @@ cd $build_dir/skaffold/examples/getting-started/
 
 skaffold dev &
 
-for i in {1.10}
+for i in {1..10}
 do
     sleep 60
     change $i
