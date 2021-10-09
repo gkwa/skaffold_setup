@@ -19,9 +19,3 @@ func main() {
         }
 }
 __eot__
-
-
-
-
-
-skaffold dev

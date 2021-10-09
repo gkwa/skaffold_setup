@@ -2,8 +2,10 @@ image: Ubuntu2004
 build: off
 install:
 - touch .hushlogin
+- sudo bash bats.sh
 - sudo bash skaffold.sh
 - sudo bash minikube.sh
 - sudo minikube start --force --driver=docker
+- sudo bash test_setup.sh
 test_script:
-- sudo bash test.sh
+- sudo bats test.bats
