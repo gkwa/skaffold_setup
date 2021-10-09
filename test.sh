@@ -6,7 +6,6 @@ git config --global user.name "Your Name"
 build_dir=$1
 
 cd $build_dir/skaffold/examples/getting-started/
-
 . $build_dir/common.sh
 
 skaffold dev &
