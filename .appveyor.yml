@@ -23,7 +23,7 @@ test_script:
 
     func main() {
     	for i := 0; i < 10; i++ {
-                    fmt.Println("Hello world!")
+                    fmt.Println("Goodbye world!")
                     time.Sleep(time.Second * 1)
             }
     }
