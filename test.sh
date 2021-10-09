@@ -1,8 +1,12 @@
+#!/bin/bash
+
 cd $1/skaffold/examples/getting-started/
 
 skaffold dev &
 
-source $APPVEYOR_BUILD_FOLDER/common.sh
+cat $APPVEYOR_BUILD_FOLDER/common.sh
+
+. $APPVEYOR_BUILD_FOLDER/common.sh
 
 sleep 10
 change1
