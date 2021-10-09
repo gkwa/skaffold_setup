@@ -1,8 +1,8 @@
 image: Ubuntu2004
 install:
 - touch .hushlogin
-- bash minikube.sh
-- bash minikube start --force --driver=docker
+- sudo bash minikube.sh
+- sudo bash minikube start --force --driver=docker
 - bash skaffold.sh
 test_script:
 - bash test.sh
