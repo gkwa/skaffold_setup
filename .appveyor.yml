@@ -5,5 +5,8 @@ install:
 - sudo bash minikube.sh
 - sudo minikube start --force --driver=docker
 test_script:
-- bash test.sh
+- skaffold config set --global collect-metrics true
+- git clone --depth 1 https://github.com/GoogleContainerTools/skaffold
+- cd skaffold/examples/getting-started
+- skaffold dev
 build: off
