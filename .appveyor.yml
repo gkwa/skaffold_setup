@@ -4,6 +4,7 @@ install:
 - sudo bash bats.sh
 - sudo bash skaffold.sh
 - sudo bash minikube.sh
+- sudo bash -c 'curl -fsSL https://get.docker.com/ | sh'
 - sudo minikube start --force --driver=docker
 - sudo skaffold config set --global collect-metrics true
 - git clone --depth 1 https://github.com/GoogleContainerTools/skaffold
