@@ -10,5 +10,5 @@ skaffold dev &
 for i in {1..5}
 do
     change $i
-    sleep 30
+    sleep 60
 done
