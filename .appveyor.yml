@@ -10,8 +10,9 @@ install:
 test_script:
 - sh: |
     cd $APPVEYOR_BUILD_FOLDER/skaffold/examples/getting-started/
-    . common.sh
     sudo skaffold dev &
+
+    . common.sh
 
     sleep 10
     change1
