@@ -10,4 +10,4 @@ install:
 - cd skaffold/examples/getting-started
 - sh: sudo bash $APPVEYOR_BUILD_FOLDER/create_main_go.sh
 test_script:
-- sh: sudo bats test.bats
+- sh: sudo bats $APPVEYOR_BUILD_FOLDER/test.bats
