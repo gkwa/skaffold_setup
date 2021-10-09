@@ -10,6 +10,9 @@ install:
 test_script:
 - sh: |
     cd $APPVEYOR_BUILD_FOLDER/skaffold/examples/getting-started/
+    skaffold dev &
+    sleep 60
+
     cat <<'__eot__' >main.go
     package main
 
@@ -29,5 +32,3 @@ test_script:
     git config --global user.email "you@example.com"
     git config --global user.name "Your Name"
     git commit -am 'stuff and things'
-    pwd
-    sudo bash -c 'pwd && skaffold dev'
