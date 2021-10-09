@@ -30,4 +30,4 @@ test_script:
     git config --global user.name "Your Name"
     git commit -am 'stuff and things'
     pwd
-    skaffold dev
+    sudo skaffold dev
