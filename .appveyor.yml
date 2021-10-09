@@ -8,4 +8,4 @@ install:
 - sudo skaffold config set --global collect-metrics true
 - sudo git clone --depth 1 https://github.com/GoogleContainerTools/skaffold
 test_script:
-- cd $APPVEYOR_BUILD_FOLDER/skaffold/examples/getting-started/ && sudo bash $APPVEYOR_BUILD_FOLDER/setup.sh && skaffold dev
+- cd $APPVEYOR_BUILD_FOLDER/skaffold/examples/getting-started/ && sudo bash $APPVEYOR_BUILD_FOLDER/setup.sh && sudo skaffold dev
