@@ -13,7 +13,7 @@ skaffold dev &
 
 for i in {1..10}
 do
-    sleep 60
+    sleep 30
     change $i
     git commit -am change$i
 done
