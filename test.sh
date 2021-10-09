@@ -4,8 +4,6 @@ cd $1/skaffold/examples/getting-started/
 
 skaffold dev &
 
-cat $1/common.sh
-
 . $1/common.sh
 
 sleep 10
