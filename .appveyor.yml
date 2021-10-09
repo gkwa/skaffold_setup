@@ -7,7 +7,7 @@ install:
 - sudo minikube start --force --driver=docker
 - sh: sudo skaffold config set --global collect-metrics true
 - sh: sudo git clone --depth 1 https://github.com/GoogleContainerTools/skaffold
-- sh: sudo cd skaffold/examples/getting-started
+- cd skaffold/examples/getting-started
 - sh: sudo bash create_main_go.sh
 test_script:
 - sh: sudo bats test.bats
