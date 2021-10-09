@@ -1,4 +1,5 @@
 image: Ubuntu2004
+build: off
 install:
 - touch .hushlogin
 - sudo bash skaffold.sh
@@ -9,4 +10,3 @@ test_script:
 - git clone --depth 1 https://github.com/GoogleContainerTools/skaffold
 - cd skaffold/examples/getting-started
 - skaffold dev
-build: off
