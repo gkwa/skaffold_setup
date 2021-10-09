@@ -13,7 +13,7 @@ test_script:
     sudo skaffold dev &
     sleep 60
 
-    cat <<'__eot__' >main.go
+    sudo cat <<'__eot__' >main.go
     package main
 
     import (
