@@ -1,10 +1,12 @@
 #!/bin/bash
 
-cd $1/skaffold/examples/getting-started/
+build_dir=$1
+
+cd $build_dir/skaffold/examples/getting-started/
 
 skaffold dev &
 
-. $1/common.sh
+. $build_dir/common.sh
 
 sleep 10
 change1
