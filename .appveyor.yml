@@ -1,7 +1,6 @@
 image: Ubuntu2004
 build: off
 install:
-- touch .hushlogin
 - sudo bash bats.sh
 - sudo bash skaffold.sh
 - sudo bash minikube.sh
