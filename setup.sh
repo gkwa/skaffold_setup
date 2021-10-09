@@ -15,3 +15,5 @@ func main() {
         }
 }
 __eot__
+
+git commit -am 'stuff and things'
