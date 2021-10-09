@@ -1,9 +1,3 @@
-commit() {
-    git config --global user.email "you@example.com"
-    git config --global user.name "Your Name"
-    git commit -am 'stuff and things'
-}
-
 change1() {
     cat <<'__eot__' >main.go
     package main

@@ -13,14 +13,14 @@ skaffold dev &
 
 sleep 10
 change1
-commit
+git commit -am change1
 
 sleep 10
 change2
-commit
+git commit -am change2
 
 sleep 10
 change3
-commit
+git commit -am change3
 
 sleep 10
