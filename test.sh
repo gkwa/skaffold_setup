@@ -4,9 +4,9 @@ cd $1/skaffold/examples/getting-started/
 
 skaffold dev &
 
-cat $APPVEYOR_BUILD_FOLDER/common.sh
+cat $1/common.sh
 
-. $APPVEYOR_BUILD_FOLDER/common.sh
+. $1/common.sh
 
 sleep 10
 change1
