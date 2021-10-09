@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat <<'__eot__' >main.go
+cat <<'__eot__'
 package main
 
 import (
