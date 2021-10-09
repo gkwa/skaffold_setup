@@ -1,10 +1,13 @@
 #!/bin/bash
 
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
 build_dir=$1
 
-. $build_dir/common.sh
-
 cd $build_dir/skaffold/examples/getting-started/
+
+. $build_dir/common.sh
 
 skaffold dev &
 
