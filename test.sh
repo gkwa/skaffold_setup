@@ -12,15 +12,23 @@ cd $build_dir/skaffold/examples/getting-started/
 skaffold dev &
 
 sleep 60
-change1
+change 1
 git commit -am change1
 
 sleep 60
-change2
+change 2
 git commit -am change2
 
 sleep 60
-change3
+change 3
 git commit -am change3
+
+sleep 60
+change 4
+git commit -am change4
+
+sleep 60
+change 5
+git commit -am change5
 
 sleep 60
