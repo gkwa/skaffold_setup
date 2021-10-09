@@ -12,17 +12,17 @@ test_script:
     cd $APPVEYOR_BUILD_FOLDER/skaffold/examples/getting-started/
     . common.sh
     sudo skaffold dev &
+
     sleep 10
     change1
+    commit
 
     sleep 10
     change2
+    commit
 
     sleep 10
     change3
-
-    git config --global user.email "you@example.com"
-    git config --global user.name "Your Name"
-    git commit -am 'stuff and things'
+    commit
 
     sleep 10

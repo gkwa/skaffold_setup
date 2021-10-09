@@ -1,4 +1,12 @@
-change1(){
+commit() {
+
+    git config --global user.email "you@example.com"
+    git config --global user.name "Your Name"
+    git commit -am 'stuff and things'
+
+}
+
+change1() {
     cat <<'__eot__' >main.go
     package main
 
@@ -13,11 +21,11 @@ change1(){
                     time.Sleep(time.Second * 1)
             }
     }
-    __eot__
+__eot__
+
 }
 
-
-change2(){
+change2() {
     cat <<'__eot__' >main.go
     package main
 
@@ -32,11 +40,10 @@ change2(){
                     time.Sleep(time.Second * 1)
             }
     }
-    __eot__
+__eot__
 }
 
-
-change3(){
+change3() {
     cat <<'__eot__' >main.go
     package main
 
@@ -51,10 +58,10 @@ change3(){
                     time.Sleep(time.Second * 1)
             }
     }
-    __eot__
+__eot__
 }
 
-change4(){
+change4() {
     cat <<'__eot__' >main.go
     package main
 
@@ -69,6 +76,5 @@ change4(){
                     time.Sleep(time.Second * 1)
             }
     }
-    __eot__
+__eot__
 }
-    
