@@ -1,6 +1,6 @@
 cd $1/skaffold/examples/getting-started/
 
-sudo skaffold dev &
+skaffold dev &
 
 . $APPVEYOR_BUILD_FOLDER/common.sh
 
