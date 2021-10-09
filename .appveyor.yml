@@ -2,6 +2,7 @@ image: Ubuntu2004
 build: off
 install:
 - sudo bash bats.sh
+- sudo bash kubectl.sh
 - sudo bash skaffold.sh
 - sudo bash minikube.sh
 - sudo bash -c 'curl -fsSL https://get.docker.com/ | sh'
