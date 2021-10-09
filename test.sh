@@ -7,8 +7,8 @@ cd $build_dir/skaffold/examples/getting-started/
 
 skaffold dev &
 
-for i in {1..4}
+for i in {1..5}
 do
     change $i
-    sleep 20
+    sleep 30
 done
